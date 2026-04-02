@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: configmap
+metadata: 
+  name: ngnix
+data:
+  course: "kubernetes for beginners"
+  duration: "14 hours"
+  trainer: "srinivasan"
+  
