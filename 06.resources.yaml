@@ -14,5 +14,5 @@ spec:                        #specification of the pod
           #hard limits         #Minimum amount of CPU required   
         limits:
           memory: "128Mi"     #Maximum amount of memory allowed
-          cpu: "500m"         #Maximum amount of CPU allowed
+          cpu: "150m"         #Maximum amount of CPU allowed
     
