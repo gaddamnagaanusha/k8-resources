@@ -1,0 +1,14 @@
+apiversion: v1
+kind: Pod
+metadata:
+   name:lables
+   namespace: roboshop
+   labels:
+      project: roboshop
+      compenent: frontend
+      environment: prod
+spec:
+    containers:
+        - name: nginx
+          image: nginx      
+
