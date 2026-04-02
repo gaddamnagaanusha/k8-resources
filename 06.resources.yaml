@@ -6,4 +6,13 @@ spec:                        #specification of the pod
   containers:                #List of containers in the pod
     - name: nginx
       image: nginx
+      resources: 
+        #soft limits            #Resource requests and limits for the container
+        requests:
+          memory: "64Mi"       #Minimum amount of memory required #RAM
+          cpu: "100m"
+          #hard limits         #Minimum amount of CPU required   
+        limits:
+          memory: "128Mi"     #Maximum amount of memory allowed
+          cpu: "500m"         #Maximum amount of CPU allowed
     
