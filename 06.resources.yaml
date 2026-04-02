@@ -1,0 +1,9 @@
+apiversion: v1   #API version of the Kubernetes object
+kind: pod        #Type of Kubernetes object
+metata:          #Metadata about the object
+  name: resources-demo      #Name of the pod
+spec:                        #specification of the pod
+  containers:                #List of containers in the pod
+    - name: nginx
+      image: nginx
+    
