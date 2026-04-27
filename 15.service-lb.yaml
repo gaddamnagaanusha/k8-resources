@@ -1,9 +1,9 @@
 apiversion: v1
 kind: service
 metadata:
-  name: nginx-nodeport
+  name: nginx-ln
 spec:
-  type: NodePort    # service type is NodePort
+  type: LoadBalancer    # service type is LoadBalancer
   selector:
     project: roboshop
     compenent: frontend
@@ -12,6 +12,5 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: 80
-    # specify the node port to be used (optional)
 
  
