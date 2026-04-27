@@ -13,10 +13,10 @@ spec:
   selector:
   #using these labels, replicaset will identify the pods which are part of this replicaset
     matchLabels:
-    project: roboshop
-    purpose: replicaset-demo
-    tier: frontend
-    component: frontend
+      project: roboshop
+      purpose: replicaset-demo
+      tier: frontend
+      component: frontend
 
     #this is pod definition, pod is subset of replicaset
   template:
