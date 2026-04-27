@@ -24,3 +24,8 @@ sudo install -m 0755 /tmp/eksctl /usr/local/bin && rm /tmp/eksctl
 * mkdir -p $HOME/bin && cp ./kubectl $HOME/bin/kubectl && export PATH=$HOME/bin:$PATH
 
 AWS configure
+
+eksctl create cluster --config-file=eks.yaml
+
+
+* once practice complete need to remove resources from eks and cloudformation and vpc
