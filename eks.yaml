@@ -1,0 +1,14 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: roboshop
+  region: us-east-1
+
+managedNodeGroups:
+- name: spot
+  instanceTypes: ["m7i-flex.large","c7i-flex.large","t3.small"]
+  # AWS Free tier
+  #instanceTypes: ["m7i-flex.large","c7i-flex.large","t3.small"]
+  spot: true
+  desiredCapacity: 2
